@@ -10,7 +10,7 @@ Author URI:   http://leo.vujanic.info/
 
 
 define('BAB_OPTION_INSTALLED', 'barba_admin_bar_installed');
-define('BAB_PLUGIN_DEBUG', true);
+define('BAB_PLUGIN_DEBUG', false);
 
 /**
  * Install function
@@ -50,7 +50,7 @@ jQuery(function() {
     }
   
     function updateData() {
-        console.log('updateData called');
+        babLog('updateData called');
         var data = {
 		    'action': 'bab_get_page_id',
 		    'location': window.location.href
